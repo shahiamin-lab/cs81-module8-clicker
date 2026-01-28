@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Clicker</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 60px;
+      background-color: #f5f5f5;
+    }
+
+    button {
+      font-size: 3rem;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    #counter, #cps {
+      font-size: 1.5rem;
+      margin-top: 15px;
+    }
+
+    #message {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🍪 Cookie Clicker</h1>
+
+<button id="cookieBtn">🍪</button>
+
+<div id="counter">Clicks: 0</div>
+<div id="cps">Cookies per second: 0</div>
+<div id="message">Click the cookie to begin!</div>
+
+<script>
+  const button = document.getElementById("cookieBtn");
+  const counterDisplay = document.getElementById("counter");
+  const cpsDisplay = document.getElementById("cps");
+  const messageDisplay = document.getElementById("message");
+
+  let clicks = 0;
+
+  button.addEventListener("click", function () {
+    clicks++;
+
