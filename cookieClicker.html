@@ -50,3 +50,10 @@
   button.addEventListener("click", function () {
     clicks++;
 
+
+    // Update click counter
+    counterDisplay.textContent = "Clicks: " + clicks;
+
+    // Fake cookies per second stat
+    let fakeCPS = (clicks / 5).toFixed(1);
+    cpsDisplay.textContent = "Cookies per second: " + fakeCPS;
